@@ -1,14 +1,14 @@
 def get_most_common_letter(text):
     counter = {}
-    for char in text:
+    """for char in text:
         if char == " ":
             pass
         else:
             counter[char] = counter.get(char, 0) + 1
         print(char)
-    letter = sorted(counter.items(), key=lambda item: item[1], reverse=True)[0][0]
+    letter = sorted(counter.items(), key=lambda item: item[1], reverse=True)[0][0]"""
     
-    
+    letter = max(counter, key=counter.get)
     
     return letter
 
