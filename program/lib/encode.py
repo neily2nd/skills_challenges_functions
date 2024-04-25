@@ -21,7 +21,7 @@ def decode(encrypted, key):
 
 
 def make_cipher(key):
-    alphabet = [chr(i + 97) for i in range(0, 26)]
+    alphabet = [chr(i + 97) for i in range(26)]
     cipher_with_duplicates = list(key) + alphabet
     
     cipher = []
