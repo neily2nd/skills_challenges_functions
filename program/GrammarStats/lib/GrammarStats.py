@@ -9,13 +9,14 @@ class GrammarStats:
         # Returns:
         #   bool: true if the text begins with a capital letter and ends with a
         #         sentence-ending punctuation mark, false otherwise
-        if text[0].isupper:
+        if text[0].isupper():
             if text[-1] in "!.,?":
                 self.total_checks += 1
                 self.total_passes += 1
                 return True
         self.total_checks +=1
         return False
+        
 
     def percentage_good(self):
         # Returns:

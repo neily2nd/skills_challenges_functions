@@ -65,8 +65,8 @@ class DiaryEntry:
         chunk = words[starting_point : ending_point]
         self.this_chunk = min(ending_point, len(words))
         
-        #if this_chunk >= len(self.contents)
-            
+        
+        
         return " ".join(chunk)
-            
+        
         

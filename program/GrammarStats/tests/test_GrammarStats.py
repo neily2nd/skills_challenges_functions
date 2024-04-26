@@ -10,6 +10,7 @@ def test_check():
 def test_percentage_good():
     checking = GrammarStats()
     assert checking.check("hi this is not valid") == False
+    
     assert checking.check("Hello this is a sentence.") == True
     assert checking.percentage_good() == 50
 
